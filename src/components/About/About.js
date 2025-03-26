@@ -199,28 +199,7 @@ function About() {
           ))}
         </Grid>
 
-        <TeamSection>
-          <Title>Our Team</Title>
-          <Subtitle>
-            Meet the creative minds behind our stunning designs.
-          </Subtitle>
-          
-          <TeamGrid ref={teamRef}>
-            {team.map((member, index) => (
-              <TeamMember 
-                key={index}
-                className={isTeamVisible ? 'visible' : ''}
-                delay={0.2 * index}
-              >
-                <MemberImage>
-                  <img src={member.image} alt={member.name} />
-                </MemberImage>
-                <MemberName>{member.name}</MemberName>
-                <MemberRole>{member.role}</MemberRole>
-              </TeamMember>
-            ))}
-          </TeamGrid>
-        </TeamSection>
+        
       </Container>
     </AboutSection>
   );
